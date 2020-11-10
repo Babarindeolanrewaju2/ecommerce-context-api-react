@@ -7,7 +7,225 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+@font-face {
+  font-family: "FuturaLightC";
+  src: local('FuturaLightC'),url("./fonts/FuturaLightC.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "FuturaLightC";
+  box-sizing: border-box;
+}
+
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+.nav{
+  display: flex;
+  justify-content: center;
 }
+
+.nav-list{
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  align-items:center;
+  margin-top:20px;
+  width: 1184px;
+  font-size: 12px;
+}
+
+ul{
+  list-style-type: none;
+}
+li:hover{
+  cursor: pointer;
+}
+
+.fas{
+  font-size: 30px;
+  color:black;
+}
+
+.product{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1184px;
+}
+
+.card{
+  width: 25%;
+  padding: 2%;
+}
+img {
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+.list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__name {
+  margin: 4px 0;
+  line-height: 16px;
+}
+
+.items-count{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add-to-bag {
+  flex: 1 1 auto;
+  height: 40px;
+  min-height: 40px;
+  padding: 5px;
+  line-height: 1.4;
+ 
+  box-sizing: border-box;
+  height: 40px;
+  padding: 0;
+  font-size: 13px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none; 
+  margin-top: 10px;
+  width: 100%;
+  text-align: left;
+  background-color: white; 
+}
+
+.product-price {
+  margin: 2px 0;
+  line-height: 18px;
+  color: #333;
+}
+
+.p-images {
+  width: 60%; 
+  height:30%; 
+  object-fit: contain; 
+}
+
+.p-details {
+  width: 30%;
+}
+
+.add-product {
+  width: 100%;
+  margin-top: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 0;
+  font-size: 13px;
+  line-height: 40px;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid beige;
+  border-radius: 0;
+  text-align: center;
+  color:black;
+}
+
+.add-to-bag {
+  margin-bottom: 0;
+}
+.add-to-bag {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 40px;
+  min-height: 40px;
+  padding: 5px;
+  line-height: 1.4;
+}
+
+.count{
+  padding: 20px;
+  border: 1px solid beige;
+  margin-left: 5px;
+}
+
+.details{
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 5vh 5vw 0vh;
+    width: 50%;
+}
+
+*:focus {
+  outline: none;
+}
+
+.details-box{
+  display: flex;
+  justify-content: center;
+}
+.count_delete{
+  padding: 20px;
+  border: 1px solid black;
+  margin-left: 50px;
+  max-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.total{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.basket-items {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto 0;
+    justify-content: space-around;
+    align-items: center;
+}
+.basket-product__brand {
+  letter-spacing: 0.1em;
+  display: block;
+  font-size: 13px;
+  margin:0 20px;
+}
+
+.add-quantity {
+  display: flex;
+}
+
+.payment{
+  text-align: center;
+}
+
+.payment div{
+  margin:20px;
+  padding: 10px 20px;
+  color: white;
+  border: 1px solid beige;
+}
+.basket-product__img {
+  display: block;
+  width: 20%;
+  height: 20%;
+  margin-bottom: 5px;
+}
+/* https://reactgo.com/add-fonts-to-react-app/ */
